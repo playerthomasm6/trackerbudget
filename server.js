@@ -18,8 +18,8 @@ app.use(express.static("public"));
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/budgettracker", {
-  useNewUrlParser: true,
-  useFindAndModify: false
+  useNewUrlParser: true
+  
 });
 
 // routes
@@ -30,3 +30,5 @@ require("./routes/htmlRoutes")(app);
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+// ,useFindAndModify: false
