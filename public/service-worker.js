@@ -4,6 +4,7 @@ const FILES_TO_CACHE = [
     '/',
     'index.html',
     '/assets/css/style.css',
+    ''
 ];
 
 
